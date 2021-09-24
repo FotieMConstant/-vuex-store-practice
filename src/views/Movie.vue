@@ -71,13 +71,13 @@ export default {
   },
   computed: {
     movie() {
+      console.log("currentMovie => ", this.$store.getters.getCurrentMovie);
       return this.$store.getters.getCurrentMovie;
     }
   },
   methods: {
     updateNote(newNote) {
-      //   console.log(newNote);
-      //   dispatch
+      console.log(this.$store.getters.getCurrentMovie);
       this.$store.commit("updateNote", newNote);
     }
   }

@@ -32,6 +32,7 @@ export default {
       // Direct access
       // return this.$store.state.movies;
       // Getters
+      console.log(this.$store.getters.getMovies);
       return this.$store.getters.getMovies;
     }
   }
