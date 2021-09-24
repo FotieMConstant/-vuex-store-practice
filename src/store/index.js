@@ -80,6 +80,8 @@ export default new Vuex.Store({
       state.movies.forEach((movie) => {
         if (movieId == movie.id) {
           movieFound = movie;
+          // to copy array
+          // {...movie};
         }
       })
       // commit the movie that was found
